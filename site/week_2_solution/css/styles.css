@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* color: red; */
+    text-align: center;
+    font-family: 'Century Gothic';
+    background-color: #f7ffe6;
+}
+
+h1 {
+    font-size: 175%;
+    margin-top: 4%;
+}
+
+section {
+    border: 1px solid black;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    background-color: #ccffcc;
+}
+
+p {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 33.33%;
+    text-align: center;
+    font-size: 125%;
+}
+
+
+.row {
+    width : 100%;
+}
+
+.row > div {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+section > div {
+    position: relative;
+    top : 50px;
+    margin-left: 4%;
+    text-align: left;
+}
+
+.title-1{
+    background-color: #ffccff;
+}
+
+.title-2{
+    background-color: #ffffcc;
+}
+
+.title-3{
+    background-color: #e6e6ff;
+    ;
+}
+
+/*********** Desktop-view **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float : left;
+        width : 33.33%;
+    }
+
+}
+
+/*********** Tablet-view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float : left;
+        width: 50%;
+    }
+    .col-md-12 {
+        float : left;
+        width: 100%;
+    }
+
+    .col-md-12 > section {
+        width: 95%;
+    }
+
+    .col-md-12 > section > div{
+        margin-left: 2%;
+    }
+}
+
+/*********** Mobile-view **********/
+@media (max-width: 767px) {
+    .col-xs-12 {
+        float : left;
+        width: 100%;
+    }
+}
+
+
