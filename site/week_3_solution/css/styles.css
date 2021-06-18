@@ -1,0 +1,129 @@
+body {
+    font-size: 18px;
+    color: #000;
+    background-color:  #ffffe6;
+    font-family: 'PT Sans', sans-serif;
+    background: url("../images/background.png") repeat-x center bottom;  
+}
+
+/** HEADER **/
+#header-nav {
+    background-color:   #a6a6a6  ;
+    border-radius: 0;
+    border-top: solid 3px black; 
+    border-bottom: solid 4px black;
+    margin-left: 0;
+}
+
+.navbar-header button.navbar-toggle {
+    margin-top: 30px;
+  }
+
+.navbar-brand {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: 100px;
+    padding-left: 0;
+    padding-left: 50px;
+}
+
+.navbar-brand h1 { /* Company name Food.LLC */
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+}
+
+/** Main Content **/
+#main-content {
+    width: 100%;
+}
+h2 {
+    margin-top: 0;
+    font-size: 2.1em;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.row {
+    background-color: #a6a6a6;
+    margin-left: 0.7%;
+    margin-right: 0.7%;
+    margin-bottom: 5%;
+}
+
+.row > div {
+    height: 100%;
+    /* height: auto; */
+}
+
+.main-content-title {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.content {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    
+  }
+  
+  /********** Small devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+
+  }
+  
+  /********** Extra small devices only **********/
+  @media (max-width: 767px) {
+    #collapsable-nav {
+        border-top: solid 4px black;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        background-color: #f2f2f2;
+    }
+
+    #nav-list {
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    #nav-list > li {
+        border-bottom: 2px solid black;
+        font-weight: bold;
+        font-size: 1.4em;
+        color: black;
+    }
+
+    #nav-list > li:nth-child(3) {
+        border-bottom: transparent;
+        font-weight: bold;
+        font-size: 1.4em;
+        color: black;
+    }
+
+    .row {
+        margin-right: 10%;
+        margin-left: 10%;
+        height: auto;
+    }
+
+    .content  {
+        padding-left: 7%;
+    }
+  }
